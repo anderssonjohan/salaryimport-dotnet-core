@@ -1,0 +1,34 @@
+{ 
+  "Items":[
+    {
+      "EmployeeId":"e557f13b-a2f7-4e19-ac10-61501466f8a7",
+      "SalaryComponents":[
+        {"Type":"1","Amount":100000.0,"FromDate":"2017-01-01T00:00:00","Id":"anna-2017-raise"}
+      ]
+    },
+    {
+      "EmployeeId":"914b8f33-3d8b-4d88-9328-09d1dc075791",
+      "SalaryComponents":[
+        {"Type":"1","Amount":100000.0,"FromDate":"2017-01-01T00:00:00","Id":"bertil-2017-raise"}
+      ]
+    },
+    {
+      "EmployeeId":"f0cbba78-7bfc-4c12-ac69-540f5a3bcb2d",
+      "SalaryComponents":[
+        {"Type":"1","Amount":100000.0,"FromDate":"2017-01-01T00:00:00","Id":"cecilia-2017-raise"}
+      ]
+    },
+    {
+      "EmployeeId":"795a2d21-8297-4030-ba84-e0be9e5e85bf",
+      "SalaryComponents":[
+        {"Type":"1","Amount":100000.0,"FromDate":"2017-01-01T00:00:00","Id":"david-2017-raise"}
+      ]
+    },
+    {
+      "EmployeeId":"5c36f079-8385-4535-b2d1-af429eaf77e2",
+      "SalaryComponents":[
+        {"Type":"1","Amount":100000.0,"FromDate":"2017-01-01T00:00:00","Id":"emma-2017-raise"}
+      ]
+    }
+  ]
+}

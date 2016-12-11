@@ -1,0 +1,116 @@
+<!-- DOT
+digraph models_diagram{
+    graph[rankdir=LR, overlap=false, splines=true];
+  person [shape=none, margin=0, label=<
+    <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td bgcolor="lightgray">Person</td></tr>
+        <tr><td port="id" align="left">Id</td></tr>
+        <tr><td align="left">Name</td></tr>
+        <tr><td align="left">PersonalIdNumber</td></tr>
+    </table>>];
+  company [shape=none, margin=0, label=<
+    <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td bgcolor="lightgray">Company</td></tr>
+        <tr><td port="id" align="left">Id</td></tr>
+        <tr><td align="left">LegalName</td></tr>
+        <tr><td align="left">OrganizationNumber</td></tr>
+    </table>>];
+  employee [shape=none, margin=0, label=<
+    <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td bgcolor="lightgray">Employee</td></tr>
+        <tr><td align="left">StartDate</td></tr>
+        <tr><td align="left">Type</td></tr>
+        <tr><td port="person" align="left">PersonId</td></tr>
+        <tr><td port="company" align="left">CompanyId</td></tr>
+        <tr><td port="salarycomponents" align="left">SalaryComponentIds</td></tr>
+    </table>>];
+  salarycomponent [shape=none, margin=0, label=<
+    <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td bgcolor="lightgray">SalaryComponent</td></tr>
+        <tr><td port="id" align="left">Id</td></tr>
+        <tr><td align="left">StartDate</td></tr>
+        <tr><td align="left">Type</td></tr>
+        <tr><td align="left">Amount</td></tr>
+    </table>>];
+  employee:person -> person:id;
+  employee:company -> company:id;
+  employee:salarycomponents -> salarycomponent:id [headlabel="*"];
+}
+-->
+<!-- SVG generated using http://dreampuf.github.io/GraphvizOnline/ -->
+<svg width="304pt" height="358pt" viewBox="0.00 0.00 304.00 358.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph1" class="graph" transform="scale(1 1) rotate(0) translate(4 354)">
+<title>models_diagram</title>
+<polygon fill="white" stroke="white" points="-4,5 -4,-354 301,-354 301,5 -4,5"></polygon>
+<!-- person -->
+<g id="node1" class="node"><title>person</title>
+<polygon fill="lightgray" stroke="lightgray" points="173,-325 173,-350 289,-350 289,-325 173,-325"></polygon>
+<polygon fill="none" stroke="black" points="173,-325 173,-350 289,-350 289,-325 173,-325"></polygon>
+<text text-anchor="start" x="212" y="-332.9" font-family="Times,serif" font-size="14.00">Person</text>
+<polygon fill="none" stroke="black" points="173,-301 173,-325 289,-325 289,-301 173,-301"></polygon>
+<text text-anchor="start" x="178" y="-308.4" font-family="Times,serif" font-size="14.00">Id</text>
+<polygon fill="none" stroke="black" points="173,-277 173,-301 289,-301 289,-277 173,-277"></polygon>
+<text text-anchor="start" x="178" y="-284.4" font-family="Times,serif" font-size="14.00">Name</text>
+<polygon fill="none" stroke="black" points="173,-253 173,-277 289,-277 289,-253 173,-253"></polygon>
+<text text-anchor="start" x="178" y="-260.4" font-family="Times,serif" font-size="14.00">PersonalIdNumber</text>
+</g>
+<!-- company -->
+<g id="node2" class="node"><title>company</title>
+<polygon fill="lightgray" stroke="lightgray" points="167,-210 167,-235 296,-235 296,-210 167,-210"></polygon>
+<polygon fill="none" stroke="black" points="167,-210 167,-235 296,-235 296,-210 167,-210"></polygon>
+<text text-anchor="start" x="204.5" y="-217.9" font-family="Times,serif" font-size="14.00">Company</text>
+<polygon fill="none" stroke="black" points="167,-186 167,-210 296,-210 296,-186 167,-186"></polygon>
+<text text-anchor="start" x="172" y="-193.4" font-family="Times,serif" font-size="14.00">Id</text>
+<polygon fill="none" stroke="black" points="167,-162 167,-186 296,-186 296,-162 167,-162"></polygon>
+<text text-anchor="start" x="172" y="-169.4" font-family="Times,serif" font-size="14.00">LegalName</text>
+<polygon fill="none" stroke="black" points="167,-138 167,-162 296,-162 296,-138 167,-138"></polygon>
+<text text-anchor="start" x="172" y="-145.4" font-family="Times,serif" font-size="14.00">OrganizationNumber</text>
+</g>
+<!-- employee -->
+<g id="node3" class="node"><title>employee</title>
+<polygon fill="lightgray" stroke="lightgray" points="1,-282 1,-307 130,-307 130,-282 1,-282"></polygon>
+<polygon fill="none" stroke="black" points="1,-282 1,-307 130,-307 130,-282 1,-282"></polygon>
+<text text-anchor="start" x="37.5" y="-289.9" font-family="Times,serif" font-size="14.00">Employee</text>
+<polygon fill="none" stroke="black" points="1,-258 1,-282 130,-282 130,-258 1,-258"></polygon>
+<text text-anchor="start" x="6" y="-265.4" font-family="Times,serif" font-size="14.00">StartDate</text>
+<polygon fill="none" stroke="black" points="1,-234 1,-258 130,-258 130,-234 1,-234"></polygon>
+<text text-anchor="start" x="6" y="-241.4" font-family="Times,serif" font-size="14.00">Type</text>
+<polygon fill="none" stroke="black" points="1,-210 1,-234 130,-234 130,-210 1,-210"></polygon>
+<text text-anchor="start" x="6" y="-217.4" font-family="Times,serif" font-size="14.00">PersonId</text>
+<polygon fill="none" stroke="black" points="1,-186 1,-210 130,-210 130,-186 1,-186"></polygon>
+<text text-anchor="start" x="6" y="-193.4" font-family="Times,serif" font-size="14.00">CompanyId</text>
+<polygon fill="none" stroke="black" points="1,-162 1,-186 130,-186 130,-162 1,-162"></polygon>
+<text text-anchor="start" x="6" y="-169.4" font-family="Times,serif" font-size="14.00">SalaryComponentIds</text>
+</g>
+<!-- employee&#45;&gt;person -->
+<g id="edge2" class="edge"><title>employee:person-&gt;person:id</title>
+<path fill="none" stroke="black" d="M130,-222C170.542,-222 135.177,-297.383 162.08,-310.928"></path>
+<polygon fill="black" stroke="black" points="161.496,-314.382 172,-313 162.927,-307.53 161.496,-314.382"></polygon>
+</g>
+<!-- employee&#45;&gt;company -->
+<g id="edge4" class="edge"><title>employee:company-&gt;company:id</title>
+<path fill="none" stroke="black" d="M130,-198C142,-198 147.25,-198 155.875,-198"></path>
+<polygon fill="black" stroke="black" points="156,-201.5 166,-198 156,-194.5 156,-201.5"></polygon>
+</g>
+<!-- salarycomponent -->
+<g id="node4" class="node"><title>salarycomponent</title>
+<polygon fill="lightgray" stroke="lightgray" points="175,-95 175,-120 287,-120 287,-95 175,-95"></polygon>
+<polygon fill="none" stroke="black" points="175,-95 175,-120 287,-120 287,-95 175,-95"></polygon>
+<text text-anchor="start" x="180.5" y="-102.9" font-family="Times,serif" font-size="14.00">SalaryComponent</text>
+<polygon fill="none" stroke="black" points="175,-71 175,-95 287,-95 287,-71 175,-71"></polygon>
+<text text-anchor="start" x="180" y="-78.4" font-family="Times,serif" font-size="14.00">Id</text>
+<polygon fill="none" stroke="black" points="175,-47 175,-71 287,-71 287,-47 175,-47"></polygon>
+<text text-anchor="start" x="180" y="-54.4" font-family="Times,serif" font-size="14.00">StartDate</text>
+<polygon fill="none" stroke="black" points="175,-23 175,-47 287,-47 287,-23 175,-23"></polygon>
+<text text-anchor="start" x="180" y="-30.4" font-family="Times,serif" font-size="14.00">Type</text>
+<polygon fill="none" stroke="black" points="175,1 175,-23 287,-23 287,1 175,1"></polygon>
+<text text-anchor="start" x="180" y="-6.4" font-family="Times,serif" font-size="14.00">Amount</text>
+</g>
+<!-- employee&#45;&gt;salarycomponent -->
+<g id="edge6" class="edge"><title>employee:salarycomponents-&gt;salarycomponent:id</title>
+<path fill="none" stroke="black" d="M130,-174C170.888,-174 136.582,-98.617 163.958,-85.0716"></path>
+<polygon fill="black" stroke="black" points="164.913,-88.4483 174,-83 163.499,-81.5927 164.913,-88.4483"></polygon>
+<text text-anchor="middle" x="165.978" y="-84.7702" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,10 @@
+{ 
+  "Items":[
+    {
+      "EmployeeId":"e557f13b-a2f7-4e19-ac10-61501466f8a7",
+      "SalaryComponents":[
+        {"Type":"1","Amount":80000.0,"FromDate":"2016-01-01T00:00:00","Id":"anna-gets-a-raise"}
+      ]
+    }
+  ]
+}

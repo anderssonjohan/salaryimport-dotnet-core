@@ -1,0 +1,1 @@
+./src/salaryimport/bin/release/netcoreapp1.1/osx.10.12-x64/publish/salaryimport $*

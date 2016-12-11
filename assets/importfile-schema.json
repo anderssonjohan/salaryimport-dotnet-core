@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "EmployeeId": {
+            "type": "string"
+          },
+          "SalaryComponents": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Type": {
+                  "type": "string"
+                },
+                "Amount": {
+                  "type": "integer"
+                },
+                "FromDate": {
+                  "type": "string"
+                },
+                "Id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Type",
+                "Amount",
+                "FromDate",
+                "Id"
+              ]
+            }
+          }
+        },
+        "required": [
+          "EmployeeId",
+          "SalaryComponents"
+        ]
+      }
+    }
+  },
+  "required": [
+    "Items"
+  ]
+}
